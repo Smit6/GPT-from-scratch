@@ -1,4 +1,4 @@
-from utils.wrangle_data import encode_to_integers
+from utils.data_utils.wrangle_data import encode_to_integers
 import os
 import numpy as np
 
@@ -31,8 +31,7 @@ def encode_train_valid(train_data, valid_data, char_to_int):
     valid_data_encoded_id = encode_to_integers(char_to_int, valid_data)
 
     # Store the encoded data
-    train_data_encoded_id = np.array(train_data_encoded_id)
-    valid_data_encoded_id = np.array(valid_data_encoded_id)
+    train_data_encoded_id = np.array(train_data_encoded_id, dtype=np.int64)
+    valid_data_encoded_id = np.array(valid_data_encoded_id, dtype=np.int64)
     train_data_encoded_id.tofile(os.path.join('data', 'train_data_encoded_id.bin'))
     valid_data_encoded_id.tofile(os.path.join('data', 'valid_data_encoded_id.bin'))
-

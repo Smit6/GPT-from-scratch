@@ -6,3 +6,4 @@ The aim of this project is to create a highly effective and efficient transforme
 
 ## PROGRESS
 - [x] Prepare required data for training and validation of the model
+- [x] Figured out how to implement and use attention using practice_work.py

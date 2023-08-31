@@ -1,7 +1,6 @@
-from numpy import char
-from utils.download_data import get_data
-from utils.wrangle_data import char_to_integers, integers_to_char
-from utils.generate_data import train_valid_split, encode_train_valid
+from utils.data_utils.download_data import get_data
+from utils.data_utils.wrangle_data import char_to_integers, integers_to_char
+from utils.data_utils.generate_data import train_valid_split, encode_train_valid
 
 def main():
     """
@@ -17,9 +16,11 @@ def main():
     # Split the data into train and validation sets
     train_data, valid_data = train_valid_split(data)
 
+    chars = sorted(list(set(data)))
+
     # Encode the training and validation data
-    char_to_int = char_to_integers(data)
-    integers_to_char(data)
+    char_to_int = char_to_integers(chars)
+    integers_to_char(chars)
     encode_train_valid(train_data, valid_data, char_to_int)
 
 
