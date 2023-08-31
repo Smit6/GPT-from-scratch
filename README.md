@@ -91,6 +91,12 @@ Will
 - PyTorch
 - NumPy
 
+### Data Preparation
+To prepare the data for training, run the following command:
+```
+python data_engine.py
+```
+
 ### Training
 To train the model, run the following command:
 ```
