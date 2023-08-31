@@ -114,8 +114,8 @@ python engine.py --generate
 - [x] Successfully generated realistic text using bigram transformer neural network
 
 ## Future Work
-- [ ] Implement attention using trigram neural network
-- [ ] Train n-gram (where n > 2) neural network on a larger dataset (e.g. Wikipedia)
+- [ ] Implement n-gram (where n > 2) neural network
+- [ ] Train n-gram neural network on a larger dataset (e.g. Wikipedia)
 - [ ] Create a model with a larger number of parameters (e.g. 1B)
 - [ ] Train the model on a larger dataset (e.g. Wikipedia)
 - [ ] Implement a more efficient and effective method of training the model (e.g. distributed training)
@@ -125,4 +125,4 @@ python engine.py --generate
 ## Conclusion
 The Bigram transformer model can generate coherent and relevant text in the style of Shakespeare's writing. Though the results are not perfect, they are impressive, considering the limited computation time and hardware used to train the model. It's worth noting that our generative model has only 0.209729 million parameters, significantly fewer than the 175 billion parameters used by the best ChatGPT-3 model. 
 
-This project was developed to demonstrate my understanding of the transformer model and showcase my ability to build a generative AI system from the ground up.
+#### This project showcases my understanding of the transformer model and proves my ability to build a generative AI system from the ground up.
