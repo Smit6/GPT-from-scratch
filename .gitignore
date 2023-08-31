@@ -1,6 +1,4 @@
 data/*
 __pycache__*
 neural_network/*
-model.pt
-engine.py
-data_api.py
+
